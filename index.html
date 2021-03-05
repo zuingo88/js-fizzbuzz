@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova_js2</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 750px;
+            height: 400px;
+            margin: auto;
+            color: white;
+            background-color: teal;
+            border: solid 2px black;
+            border-radius: 20px;
+            overflow: auto;
+        }
+
+        .pi {
+            transition: all 0.5s;
+        }
+
+        .pi:hover {
+            scale: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 id="titolo">ciao mondo</h1>
+        <p id="p1" class="pi">tanti saluti</p>
+        <p id="p2" class="pi">tanti saluti</p>
+        <p id="p3" class="pi">tanti saluti</p>
+    </div>
+
+    <script>
+
+       //Scrivi un programma che stampi i numeri da 1 a 100, ma per i multipli di 3 stampi "Fizz" al posto del numero e per i multipli di 5 stampi Buzz. Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+
+       for (var i = 1; i <= 100; i++) {
+           if (i % 3 == 0 && i % 5 == 0) {
+               console.log('FizzBuzz');
+            } else if  (i % 3 == 0) {
+               console.log('Fizz');
+            } else if (i % 5 == 0) {
+               console.log('Buzz')
+            } else {
+               console.log(i)
+           }
+       }
+
+    </script>
+
+</body>
+
+</html>
